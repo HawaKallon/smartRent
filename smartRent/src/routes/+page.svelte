@@ -9,6 +9,7 @@
   async function logIn() {
     try {
       const { user, error } = await supabase.auth.signInWithPassword({
+      email,
         phone: phone_number,
         password: password,
       });
