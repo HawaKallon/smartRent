@@ -143,6 +143,7 @@
           // @ts-ignore
           const { user, error } = await supabase.auth.signUp({
             email,
+            phone: phone_number,
             password
           });
           if (error) throw error;
